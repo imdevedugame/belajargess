@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tugas 2</title>
+  <style>
+    body {
+      background-color: #fdaecb;
+      font-family: Arial, sans-serif;
+    }
+    h3 {
+      text-align: center;
+    }
+    table {
+      background-color: #ffc0cb;
+      border-collapse: collapse;
+      margin: 0 auto;
+      width: 90%;
+    }
+    td {
+      padding: 5px;
+      border: 1px solid #000;
+    }
+    th {
+      text-align: center;
+      font-size: 24px;
+      padding: 10px;
+      border: 1px solid #000;
+    }
+    input[type="text"],
+    input[type="password"],
+    select,
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .btn {
+      padding: 5px 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h3><b>Tugas 2 (warna bebas)</b></h3>
+
+  <form>
+    <table>
+      <tr>
+        <th colspan="4"><b>FORM REGISTRASI</b></th>
+      </tr>
+      <tr>
+        <td>Nama Lengkap</td>
+        <td colspan="3"><input type="text" name="nama"></td>
+      </tr>
+      <tr>
+        <td>Tempat Lahir</td>
+        <td colspan="3"><input type="text" name="tempat_lahir"></td>
+      </tr>
+      <tr>
+        <td>Tanggal Lahir</td>
+        <td>
+          Tanggal <br>
+          <select name="tanggal">
+            <option>1</option>
+            <!-- Tambahkan opsi lain jika mau -->
+          </select>
+        </td>
+        <td>
+          Bulan <br>
+          <select name="bulan">
+            <option>Januari</option>
+            <!-- Tambahkan opsi lain jika mau -->
+          </select>
+        </td>
+        <td>
+          Tahun <br>
+          <input type="text" name="tahun">
+        </td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin</td>
+        <td colspan="3">
+          <input type="radio" name="jk" value="pria"> Pria
+          <input type="radio" name="jk" value="wanita"> Wanita
+        </td>
+      </tr>
+      <tr>
+        <td>Agama</td>
+        <td colspan="3">
+          <select name="agama">
+            <option>Islam</option>
+            <!-- Tambah opsi jika perlu -->
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Pekerjaan</td>
+        <td colspan="3">
+          <select name="pekerjaan">
+            <option>Pegawai Negeri</option>
+            <!-- Tambah opsi jika perlu -->
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Hobby</td>
+        <td><input type="checkbox" name="hobby" value="nonton"> Nonton<br>
+            <input type="checkbox" name="hobby" value="jalan"> Jalan-jalan</td>
+        <td><input type="checkbox" name="hobby" value="game"> Game Online<br>
+            <input type="checkbox" name="hobby" value="buku"> Baca Buku</td>
+        <td><input type="checkbox" name="hobby" value="shopping"> Shopping<br>
+            <input type="checkbox" name="hobby" value="komputer"> Main Komputer</td>
+      </tr>
+      <tr>
+        <td>Alamat Lengkap</td>
+        <td colspan="3">
+          <textarea name="alamat" rows="3"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>No. Telp / No. HP</td>
+        <td colspan="3"><input type="text" name="telepon"></td>
+      </tr>
+      <tr>
+        <td>Password Anda</td>
+        <td colspan="3"><input type="password" name="password"></td>
+      </tr>
+      <tr>
+        <td colspan="4" align="center">
+          <input type="submit" class="btn" value="Kirim">
+          <input type="reset" class="btn" value="Batal">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
